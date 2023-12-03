@@ -1,3 +1,5 @@
+INSTALL GUIDE STEP-BY-STEP
+
 
 STEP 0 - INSTALL PRE-REQS
 sudo apt-get install -y build-essential autotools-dev libdumbnet-dev libluajit-5.1-dev libpcap-dev \ zlib1g-dev pkg-config libhwloc-dev cmake liblzma-dev openssl libssl-dev cpputest libsqlite3-dev \ libtool uuid-dev git autoconf bison flex libcmocka-dev libnetfilter-queue-dev libunwind-dev \ libmnl-dev ethtool libjemalloc-dev
@@ -34,10 +36,6 @@ cd ~/snort
 wget https://boostorg.jfrog.io/artifactory/main/release/1.77.0/source/boost_1_77_0.tar.gz 
 tar -xvzf boost_1_77_0.tar.gz
 
-
-
-
-
 STEP 6 – Install Hyperscan
 cd ~/snort 
 wget https://github.com/intel/hyperscan/archive/refs/tags/v5.4.2.tar.gz 
@@ -71,15 +69,6 @@ sudo make install
 STEP 9 - Update shared libraries
 sudo ldconfig
 
-
-
-
-
-
-
-
-
-
 STEP 10 – Download latest version of Snort 3
 cd ~/snort 
 wget https://github.com/snort3/snort3/archive/refs/tags/3.1.74.0.tar.gz -O snort3-3.1.74.0.tar.gz 
@@ -112,4 +101,3 @@ sudo cp -r lib/ /usr/local/bin/pulledpork3
 sudo chmod +x /usr/local/bin/pulledpork3/pulledpork.py 
 sudo mkdir /usr/local/etc/pulledpork3 
 sudo cp etc/pulledpork.conf /usr/local/etc/pulledpork3/
-![image](https://github.com/MyDFIR/snort3-install-guide/assets/151220052/7dbc5bea-cda6-4804-b337-1924510b1ebe)
